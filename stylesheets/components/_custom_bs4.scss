@@ -1,0 +1,349 @@
+
+//Common
+.bg-color{
+  background-color: $bg_portfolio;
+  opacity: .1;
+  height: 300px;
+}
+
+.wrapper{
+  background: #fff;
+  margin: 0px auto;
+  width: calc(100vw - 32px);
+  height: auto;
+  position: relative;
+  top: -100px;
+  bottom: -100px;
+  @include media-breakpoint-up(lg){
+    width: 1000px;
+  }
+  .title{
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
+
+.break{
+  font-family: 'Catamaran' , sans-serif;
+  color: $jun;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+// INDEX
+.index-banner{
+  width:100%;
+  background: url("/img/banner.png") top center/cover;
+  height: calc(100vh - 95px);
+  display: table;
+  @include media-breakpoint-up(lg){
+    height: 520px;
+  }
+  .banner-text{
+    font-size: 56px;
+    color: #fff;
+    // margin: 200px 0;
+    vertical-align: middle;
+    font-weight: 700;
+    text-align: center;
+    line-height: 80px;
+    text-shadow: 2px 2px #666;
+  }
+}
+
+/* Cursor */
+.txt-type > .txt {
+  padding: 0px 10px;
+  border-right: 0.2rem solid #777;
+}
+
+.index-portfolio{
+  .title{
+    margin: 80px 0 30px;
+    h1{
+      font-weight: 700;
+    }
+  }
+  .group{
+    .portfolio-box{
+      display: block;
+      width: 250px;
+      height: 250px;
+      box-shadow: inset 0 0 0 0 rgba(255,255,255,.5);
+      -webkit-transition: ease-out 0.4s;
+      -moz-transition: ease-out 0.4s;
+      transition: ease-out 0.4s;
+      @include media-breakpoint-up(lg){
+        display: inline-block;
+      }
+      &:hover {
+        box-shadow: inset 0 0 0 300px rgba(255,255,255,.5);
+      }
+    }
+  }
+  .index-designs{
+    margin: 16px auto;
+    width: 300px;
+    height: 310px;
+  	position: relative;
+      #design-item1 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transform: translate(0px, 0px);
+        width: 140px;
+        height: 160px;
+        background: url("../img/ui/ui04.png") center center/cover;
+      }
+
+      #design-item2 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transform: translate(150px, 0px);
+        width: 150px;
+        height: 120px;
+        background: url("../img/ui/ui02.png") center center/cover;
+      }
+
+      #design-item3 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transform: translate(0px, 170px);
+        width: 140px;
+        height: 140px;
+        background: url("../img/ui/ui03.png") center center/cover;
+      }
+
+      #design-item4 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transform: translate(150px, 130px);
+        width: 150px;
+        height: 180px;
+        background: url("../img/ui/ui01.png") center center/cover;
+      }
+    @include media-breakpoint-up(lg){
+      margin: 16px auto;
+  	  width: 1000px;
+  	  height: 680px;
+  		position: relative;
+
+        #design-item1 {
+      	  transform: translate(0px, 0px);
+      	  width: 280px;
+      	  height: 400px;
+      	}
+
+      	#design-item2 {
+      	  transform: translate(300px, 0px);
+      	  width: 400px;
+      	  height: 320px;
+      	}
+
+      	#design-item3 {
+      	  transform: translate(300px, 340px);
+      	  width: 400px;
+      	  height: 300px;
+      	}
+
+      	#design-item4 {
+      	  transform: translate(720px, 0px);
+      	  width: 280px;
+      	  height: 360px;
+      	}
+    }
+  }
+}
+
+
+
+// PORTFOLIO
+.portfolio{
+  .box{
+    width: 300px;
+    height: auto;
+    margin-bottom: 1.2rem;
+    &:hover{
+      transition: .2s ease;
+      box-shadow: 0px 0px 20px 0px #f0f0f0;
+    }
+    a{
+      display: block;
+      width: 100%;
+      height: 300px;
+      @include media-breakpoint-up(lg){
+        height: 340px;
+      }
+    }
+    .box-text{
+      font-family: 'Catamaran' , sans-serif, 'Noto Serif TC', serif;
+      padding: 20px;
+      h3{
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+
+// ABOUT
+.about{
+  margin-bottom: -100px;
+  .about-text{
+    h1{
+      font-family: 'Catamaran' , sans-serif;
+      color: $jun;
+      font-weight: 700;
+    }
+    @include media-breakpoint-up(lg){
+      .about-left,
+      .about-right{
+        width: 60%;
+      }
+    }
+  }
+  img{
+    width: 100%;
+  }
+}
+
+
+// UIDESIGNS
+.uidesign{
+  .row{
+    #ui09{
+      display: none;
+    }
+    @include media-breakpoint-up(md){
+      #ui04{
+        margin-top: -65px;
+      }
+      #ui06{
+        margin-top: -55px;
+      }
+      #ui08{
+        margin-top: -35px;
+      }
+      #ui09{
+        display: block;
+      }
+      #ui10{
+        margin-top: -100px;
+      }
+    }
+    @include media-breakpoint-up(lg){
+      #ui04{
+        margin-top: 0px;
+      }
+      #ui05{
+        margin-top: -55px;
+      }
+      #ui06{
+        margin-top: -70px;
+      }
+      #ui08{
+        margin-top: 0px;
+      }
+      #ui09{
+        display: none;
+      }
+      #ui10{
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+
+//CASE
+.wrapper{
+  .case-title{
+    font-size: 28px;
+    font-weight: 700;
+    @include media-breakpoint-up(lg){
+      font-size: 32px;
+    }
+  }
+}
+
+.case{
+  img{
+    width: 200px;
+    height: auto;
+    @include media-breakpoint-up(lg){
+      width: 350px;
+    }
+  }
+  .row{
+    .about, .role, .time{
+      margin-bottom: 0px;
+      border-left: 2.5px solid $jun;
+    }
+  }
+  .content{
+    line-height: 1.8rem;
+    p{
+      margin-bottom: 32px;
+    }
+    img{
+      display: block;
+      margin: 30px auto 0px;
+      width: 100%;
+      @include media-breakpoint-up(lg){
+        width: 60%;
+      }
+    }
+    .D-title{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h1{
+        margin: 12px 0 0 0;
+        line-height: 40px;
+      }
+    }
+    .quote{
+      border-left: 2.5px solid $jun;
+      img{
+        display: inline;
+        margin: 0;
+        width: 18px;
+      }
+    }
+    .persona-box{
+      position: relative;
+      border: solid $jun 1px;
+      box-shadow: 0px 4px 15px 2px #e0e0e0;
+      height: 300px;
+      width: 220px;
+      padding: 0 30px;
+      .persona-front{
+        .face{
+          width:150px;
+          height: 150px;
+          border-radius: 50%;
+        }
+      }
+      .persona-overlay{
+        opacity: 0;
+        position: absolute;
+        padding: 0 30px;
+        background-color: $jun;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: .5s ease;
+      }
+      &:hover{
+        box-shadow: none;
+        .persona-overlay{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

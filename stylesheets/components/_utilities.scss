@@ -1,0 +1,28 @@
+
+//
+.vertical-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+.emphasize{
+  color: $emphasize_color;
+  font-weight: 700;
+}
+
+.jun-text, .current{
+  color: $jun;
+}
+
+
+
+
+//bg-stytle
+.bg-style{
+  background-position: center center;
+  background-size: cover;
+}
+
+//btn
+.btn-customize{
+  font-family:'Noto Serif TC', serif;
+}

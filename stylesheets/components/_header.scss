@@ -1,0 +1,61 @@
+// Global
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+TC:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Catamaran:200,400,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+*{
+  ul{
+    list-style: none;
+  }
+ a{
+   color: $p_color;
+ }
+}
+
+body {
+  font-family:'Catamaran' , sans-serif, 'Noto Serif TC', serif;
+  color: $p_color;
+  a:hover{
+  text-decoration: none;
+  }
+}
+
+//Navbar
+header{
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  transition: .5s;
+  z-index: 99;
+}
+nav{
+  border-bottom: 1px solid rgba(105, 105, 105, .1);
+  .logo{
+    font-family: 'Catamaran' , sans-serif;
+    color: $h_color;
+    font-weight: 700;
+    &:hover{
+      color: $h_color;
+    }
+    @include media-breakpoint-up(lg){
+      padding-right: 15px;
+      border-right: 4px solid $h_color;
+      line-height: 38px;
+    }
+  }
+  .nav-list li{
+    display: inline-block;
+    font-weight: 700;
+  }
+}
+
+//Footer
+footer{
+  margin-top: 30px;
+  height: 150px;
+  background: $bg_footer;
+  .footer-text{
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 14px;
+  }
+}

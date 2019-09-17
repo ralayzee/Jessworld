@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type='image/x-icon' href="favicon.png">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/all.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <title>Jun's world</title>
+</head>
+<body>
+  <header>
+    <nav class="py-3 py-lg-3 px-5 text-center text-lg-left clearfix">
+      <a href="index.html" class="h1 mb-0 logo">JUN's world</a>
+      <ul class="nav-list mb-0 pt-2 pt-lg-0 pl-0 pl-lg-4 d-lg-inline-block">
+        <li><a class="mx-3" href="portfolio.html">專案</a></li>
+        <li><a class="mx-3" href="uidesign.html">作品集</a></li>
+        <li><a class="mx-3" href="about.html">關於</a></li>
+      </ul>
+      <button class="btn btn-outline-dark btn-customize d-none d-lg-block px-3 float-right" href="contact.html">聯絡我</button>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="index-banner">
+    <div class="vertical-center">     <!-- put in a container! -->
+      <div class="banner-text">I'M A<br><span class="txt-type" data-wait="3000" data-words='["DESIGNER", "RESEARCHER", "PLANNER"]'></span></h2>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="index-portfolio">
+    <div class="container">
+      <div class="title text-center">
+        <p class="break">//</p>
+        <h1>專案</h1>
+      </div>
+      <div class="group d-lg-flex justify-content-center">
+        <a href="case-eat.html" class="portfolio-box mx-auto m-2 m-lg-2" style="background: url('/img/pro_01/cover.png') center center/cover;"></a>
+        <a href="case-tbike01.html" class="portfolio-box mx-auto m-2 m-lg-2" style="background: url('/img/pro_02/visual_design.png') center center/cover;"></a>
+        <a href="case-service01.html" class="portfolio-box mx-auto m-2 m-lg-2" style="background: url('/img/pro_03/cover.png') center center/cover;"></a>
+      </div>
+    </div>
+    <div class="text-center">
+      <a class="btn btn-outline-dark btn-customize mt-5 px-3" href="portfolio.html">更多</a>
+    </div>
+  </section>
+
+  <!-- UI DESIGN -->
+  <section class="index-portfolio">
+    <div class="container">
+      <div class="title text-center">
+        <p class="break">//</p>
+        <h1>作品集</h1>
+      </div>
+      <section class="index-designs">
+        <div id="design-item1"></div>
+        <div id="design-item2"></div>
+        <div id="design-item3"></div>
+        <div id="design-item4"></div>
+      </section>
+    </div>
+    <div class="text-center">
+      <a class="btn btn-outline-dark btn-customize mt-5 px-3" href="uidesign.html">更多</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="index-portfolio">
+    <div class="container">
+      <div class="title text-center">
+        <p class="break">//</p>
+        <h1>關於</h1>
+      </div>
+      <div class="row no-gutters justify-content-center">
+        <div class="col-10 text-center">
+          <p id="index-about">嗨！我是 <span class="emphasize">JUN</span>，曾經夢想做一名心理師，卻誤打誤撞，進入了使用者經驗的茫茫大海中。如果你也對使用者經驗有興趣，快讓我們彼此認識吧！</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <a class="btn btn-outline-dark btn-customize mt-5 px-3" href="about.html">更多</a>
+    </div>
+  </section>
+
+  <footer class="text-center py-5">
+    <ul class="d-flex justify-content-center pl-0">
+      <li class="mx-4">
+        <a href="https://github.com/ralayzee" target="_blank"><i class="fab fa-github"></i></a>
+      </li>
+      <li class="mx-4">
+        <a href="https://www.behance.net/moon0104909156" target="_blank"><i class="fab fa-behance"></i></a>
+      </li>
+      <li class="mx-4">
+        <a href="https://www.linkedin.com/in/pei-jun-chen-148626138/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </li>
+    </ul>
+    <div class="footer-text">
+      <p>Contact : junts1620@gmail.com</p>
+      <p>© 2019 Crafted by Jun</p>
+    </div>
+  </footer>
+
+
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+  <!-- Jquery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Scrollreveal -->
+  <script>
+      window.sr = ScrollReveal();
+      sr.reveal('.title', {
+        duration: 1500,
+        origin:'bottom',
+        distance:'20px'
+      });
+
+      sr.reveal('.portfolio-box', {
+        duration: 1500,
+        origin:'right',
+        distance:'200px'
+      });
+
+      sr.reveal('.index-designs', {
+        duration: 1500,
+        origin:'left',
+        distance:'200px'
+      });
+
+      sr.reveal('#index-about', {
+        duration: 1500,
+        origin:'bottom',
+        distance:'20px'
+      });
+
+  </script>
+</body>
+</html>
